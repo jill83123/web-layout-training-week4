@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>部落格 | Red Glasses</title>
+    <link rel="shortcut icon" href="./assets/images/home-sectioin2-4.ico" type="image/x-icon">
+<!-- icon -->
+<link rel="stylesheet"
+  href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+<!-- font -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link
+  href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700;900&family=Roboto:wght@100;300;400;500;700;900&display=swap"
+  rel="stylesheet">  <script type="module" crossorigin src="/web-layout-training-vite/assets/all-abd4eaac.js"></script>
+  <link rel="stylesheet" href="/web-layout-training-vite/assets/all-7c318570.css">
+</head>
+
+<body>
+    <header class="nav">
+    <div class="container d-flex align-center justify-content-between">
+        <h1><a href="index.html"><img src="data:image/png;base64,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" alt="Logo"></a></h1>
+        <ul class="menu d-flex">
+            <li><a href="series.html">系列鏡框</a></li>
+            <li><a href="shop.html">門市據點</a></li>
+            <li><a href="blog.html">部落格</a></li>
+            <li><a href="question.html">常見問題</a></li>
+        </ul>
+    </div>
+</header>    <main>
+        <section class="blog-nav">
+            <div class="container">
+                <div class="d-flex align-center justify-content-between">
+                    <ul class="d-flex align-center">
+                        <li><a href="#">最新消息</a></li>
+                        <li><a href="#">特別企劃</a></li>
+                        <li><a href="#">新品上市</a></li>
+                        <li><a href="#">鏡框小知識</a></li>
+                    </ul>
+                    <span class="material-symbols-outlined">search</span>
+                </div>
+            </div>
+        </section>
+
+        <section class="blog">
+            <div class="container">
+                <h2>部落格</h2>
+                <ul>
+                    <li class="d-flex justify-content-between">
+                        <img src="/web-layout-training-vite/assets/blog-1-13919abb.png" alt="blog-1">
+                        <div class="article-preview d-flex justify-content-between">
+                            <div>
+                                <h3>情人特別企劃</h3>
+                                <div class="small-title d-flex justify-content-between">
+                                    <h4>2020 Valentine’s Special</h4>
+                                    <span>2020/02/14</span>
+                                </div>
+                                <p>一年一度西洋情人節即將到來，我們推出最強「情人節企劃」，為這個甜蜜的節日加溫。偶爾跟另一半來個低調情侶單品，結合彼此喜好、找出合適框型款式，在這個春夏輕鬆搭出屬於你們的甜蜜默契！
+                                    即日起至2/16為止，不論是熱戀情侶、自由自在一個人或是老夫老妻，只要從未來過本店的新朋友，綁定官方LINE好友，都可享專屬優惠⋯⋯
+                                </p>
+                            </div>
+                            <a href="blog_2020_valentine.html">MORE</a>
+                        </div>
+                    </li>
+                    <li class="d-flex justify-content-between">
+                        <img src="/web-layout-training-vite/assets/blog-2-3c1c1ec4.png" alt="blog-2">
+                        <div class="article-preview d-flex justify-content-between">
+                            <div>
+                                <h3>街頭潮人訪問</h3>
+                                <div class="small-title d-flex justify-content-between">
+                                    <h4>Street Interview</h4>
+                                    <span>2020/02/02</span>
+                                </div>
+                                <p>炎熱的夏季裡，衣著選擇經常希望以簡潔的風格為主，但有時單純只穿搭 T
+                                    恤或短袖開襟襯衫，又覺得整體造型度有點不足嗎？那麼不妨可以透過「配件」，為穿搭點綴出與眾不同的視覺層次，而本季有哪些必備的配件系列呢？一起從以下推薦的 3
+                                    款單品，讓你瞬間帥氣爆棚散發型男品味⋯⋯
+                                </p>
+                            </div>
+                            <a href="#">MORE</a>
+                        </div>
+                    </li>
+                    <li class="d-flex justify-content-between">
+                        <img src="/web-layout-training-vite/assets/blog-3-0b1c0a84.png" alt="blog-3">
+                        <div class="article-preview d-flex justify-content-between">
+                            <div>
+                                <h3>春季新品上市</h3>
+                                <div class="small-title d-flex justify-content-between">
+                                    <h4>New Selection</h4>
+                                    <span>2020/02/02</span>
+                                </div>
+                                <p>2020
+                                    年春季的光學眼鏡跳脫前幾季流行的復古框型，比起圓框與小方框等文青風格，偏向個性款式的眉框眼鏡成為這一季的耀眼之星。除了經典款式如黑色眉框落在長方形鏡面上，眉宇之間露出專業莊重的特殊氣質，
+                                    包覆在圓形鏡框上的貓眼型眉框則是強調出特殊設計感，俐落時髦的造型搭配一件簡單的白襯衫就相當有型，是喜愛時尚質感人士絕不能錯過的必備款式⋯⋯
+                                </p>
+                            </div>
+                            <a href="#">MORE</a>
+                        </div>
+                    </li>
+                    <li class="d-flex justify-content-between">
+                        <img src="/web-layout-training-vite/assets/blog-4-d6e33f7f.png" alt="blog-4">
+                        <div class="article-preview d-flex justify-content-between">
+                            <div>
+                                <h3>設計師獨享鏡框優惠</h3>
+                                <div class="small-title d-flex justify-content-between">
+                                    <h4>Sales for Designer</h4>
+                                    <span>2020/01/18</span>
+                                </div>
+                                <p>2020
+                                    年春季的光學眼鏡跳脫前幾季流行的復古框型，比起圓框與小方框等文青風格，偏向個性款式的眉框眼鏡成為這一季的耀眼之星。除了經典款式如黑色眉框落在長方形鏡面上，眉宇之間露出專業莊重的特殊氣質，
+                                    包覆在圓形鏡框上的貓眼型眉框則是強調出特殊設計感，俐落時髦的造型搭配一件簡單的白襯衫就相當有型，是喜愛時尚質感人士絕不能錯過的必備款式⋯⋯
+                                </p>
+                            </div>
+                            <a href="#">MORE</a>
+                        </div>
+                    </li>
+                    <li class="d-flex justify-content-between">
+                        <img src="/web-layout-training-vite/assets/blog-5-f399c6cc.png" alt="blog-5">
+                        <div class="article-preview d-flex justify-content-between">
+                            <div>
+                                <h3>抵抗夏日大作戰</h3>
+                                <div class="small-title d-flex justify-content-between">
+                                    <h4>Summer Special</h4>
+                                    <span>2019/08/07</span>
+                                </div>
+                                <p>2020
+                                    年春季的光學眼鏡跳脫前幾季流行的復古框型，比起圓框與小方框等文青風格，偏向個性款式的眉框眼鏡成為這一季的耀眼之星。除了經典款式如黑色眉框落在長方形鏡面上，眉宇之間露出專業莊重的特殊氣質，
+                                    包覆在圓形鏡框上的貓眼型眉框則是強調出特殊設計感，俐落時髦的造型搭配一件簡單的白襯衫就相當有型，是喜愛時尚質感人士絕不能錯過的必備款式⋯⋯
+                                </p>
+                            </div>
+                            <a href="#">MORE</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="pages">
+            <div class="container">
+                <ul class="d-flex">
+                    <li class="last"><a href="#">上一頁</a></li>
+                    <li><a href="#">1</a></li>
+                    <li class="select"><a href="#">2</a></li>
+                    <li><a href="#">3</a></li>
+                    <li><a href="#">4</a></li>
+                    <li><a href="#">5</a></li>
+                    <li class="next"><a href="#">下一頁</a></li>
+                </ul>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+    <div class="container">
+
+        <div class="footer-top">
+            <div class="footer-link d-flex align-center justify-content-between">
+                <ul class="menu d-flex">
+                    <li><a href="index.html">首頁</a></li>
+                    <li><a href="series.html">系列鏡框</a></li>
+                    <li><a href="shop.html">門市據點</a></li>
+                    <li><a href="blog.html">部落格</a></li>
+                    <li><a href="question.html">常見問題 </a></li>
+                </ul>
+                <div class="social-media d-flex align-center">
+                    <a href="#"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGAAAABgCAMAAADVRocKAAAAe1BMVEUAAAD////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////NgkbwAAAAKXRSTlMAED9vf7/P/++fIN9fMI+vQHDwwNBQgGCQoLAnBU4KYhF1FpIenBST4NjHe8YAAAIaSURBVHgB7dYFsuM6EIXh06E2RPeZIoff8Hj/GxxGZ+wjSqG/oov6S4aOsHC3WMhqvdlud/pFtt3mm1WBhFabrT4o870gBfOS6ZT/9oi13+msbCNRy5dKRSSqnTrJ1gghL+psZ+DNlOrDexNr9bQV+MiViLtMstMAmUmwfnyBrx9f2CoRWcg1QilganXQtN91OrYDYZTqaoPfqoP+xWKWlEq0FUb0bwZzrBIWD3xuQ8Gu/QE0oDbiCe3hEMgKTKl03hEuAT2FbqARt4AWgRuwIAG2hTMJiGsgk6BHqIVrQGs+JPgVkn2+/UbVcWDsSKDCn/pMZxTkCvF/6vUBu0a9EviDZP736+wTOCiBR5kSXkPxgrGrJg3cMHZPG/gfY6/SBl5j7E3awFuMvUsbeL8EkgVaMPbZgfbZgfLZAXUMfPAMkMPsR9dRQQMH11FxDwxY12F3DQycXMc1hrBA6/qBg3NYwP0jsw4KCL2y5NhSbn7BH6rND7n7sQVdwmFXkKNjbGAgh9/oQE2O79EBwT9VqQInTOgSBQpMqNIETpjUJgkUZLjHBixmHOMDA+bIEB2oMMvEBiyIOi7QgjrFBAYBJV14oDGAe4EH+Pq0QAJkfVIgAbI+cfIPdAY+rG+gFfipGq+AhTc58QC7PETVuQWaGqH6gQeaoyBC380HGiuIZE7NZODcI4nq2D0GmlMvSKiq//ruUGCxWDj6DFdye+ioNlViAAAAAElFTkSuQmCC" alt=""></a>
+                    <a href="#"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGAAAABgCAMAAADVRocKAAAAeFBMVEUAAAD////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////GqOSsAAAAKHRSTlMAPzBvn7//749fIEDfEGDgwKBwgLDwUM/Qf5ACCRMYHa9PFSw8KBwM90qh6AAAAuxJREFUeAHt2OditCoQBuBZgsMuCOpa03ty/1d4GmKaAwLn6/v8tbwoHTg5OQnaBTBIxc54gZuIYn+QEEdxgXHKfUTGocQUhYJNWIGpuIawM8wgFIRwzGPi31/VtHCC5/1Vc1QSwphqux7fDEAb0OkbBjGGGh0hgSIFzjoJsVSFsxEoDc6OkEB3oWpgG1tCsIAicL2FVJO3hBqtGiIN++Kc2Ur01oJBS0Gc7l21tWhJ+kacIM7F+3JJXysRSTWscVa/L2XnaUMSoih04F9Huh0NW/6Q3O122hfA0LqEL1r3cQR94CNaxTmjfhGgdUVWVksU/dMcWp5rV7CPjW8iA2pPgOb4hThfaabLa67JAAVfGYFrRjZXQ9u1ElxcQgBHgjArVUkGjFQAR5qJCEAigKOPIQJuNge0uJgu/ruoh6bHBVu//5YMkFRHrQZY6HaJKHVkAHygS5xdfLowERciA1q6NhucsYwALTxTVI1WkxFg1t7h6AotmRzg+kavvauoY3KA9K8C3E8akwMMWhpWENeHmIA2sMzQK51ThQLoEZz+R8fMABMKaDMDFFDanz0g/hf9+ErOb6bDN+lo32qoKNxiMDXAraLEtxrs4IgWhxW6zB+ude+ZcO7Qar7RlMkTp0xi1sL9pwtj6qQvqb1/qWChzwXOeh0ZoFZW9bNx3hbc8xIXCjIDoMEPxLal4wN8MREB0EUufuOX7w0SegN5AY7pcc3E6N32ddwWSjYrxW99I/h1eBPoj6haDatGtwmM38aaZkKrvhiAgmTA4JZpPkwpJcFD0htxhpaGHGauIFjRu6adznsY4q4VkIw+zok/kCJ4D6Q0Zn+CFN4jm2b5vlQFeutR5R5rcrQqIHRZCZoHH5c9zu40xFIjziYgGXTEXkKM+zt0ehk4HHbG/WEHG+jdGS/J4306wSkLH0FPcnRCFgMhR8zQKwhjE6bqNGxiKkxRK9hsaHqMU11IiKPlI1ObPLHnl1f4gU5OTv4GYulZF3YBhIwAAAAASUVORK5CYII=" alt=""></a>
+                    <a href="#"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGAAAABgCAMAAADVRocKAAAAVFBMVEUAAAD///////////////////////////////////////////////////////////////////////////////////////////////////////////8wXzyWAAAAHHRSTlMAP19/r+//3zDPQGCwoMCAkNDwcBDgIFC/j59v4ENljAAAAn5JREFUeAHt2dFuqzgUheGV9HhhbMDgGCDJ+7/nCA0ZmmmAbUNPVSnfFVJV/pot3+zi7e23Op0/op1PEDr/UUyi/pwlr8+4Q7aV0Dl3yjVWGMXdlMEiy0NYLDA8iMFLWvEgSuOVnIfJBQM4fgwZD5QlHyD9CAUPVeL/FLdUlftXXTXcouLugC+txhNzKeLugl17u8YrwRYRQ3Bc0NqARV3JJU4W8BbrunpXoAzYpKvkgO8h4hIDTYCQ8SmBIkBM+/hAiRjBxwaagCjaxwXagEgmLqARzcUEHBI08kAbkMDIAxZJCmnAByQx0kCNRI0woDGph6F//Hx87IbhipEdBov+y52sZYEWDxXpPj+ax3wc6eZfqTDRskC1GlB6OQBZwK0GmIc50JiRnocgClzWA7zNgQrPKlHAbATY/xfIPkYWD+UBgZJU3dIM3AGB0JD5UqA6YAbQnlRTwFejS2TArQdgSS4MOYu/B7fTKHwOoCCfhtxjEigKqK8ndk+B0PL1DHpZgGYjAL0QKIWBEpNiTpakhSY9Rhfygr6a1JgoYUAFJLEUBuiQImSiQPoRHMUB1ogXVESABtFyxgRUh0g3RgWYB0SxlATSC5rRAeYdxLRKCFCZ9PeLAuQdIkYxMcDByOabHCBvHTbcmRSYXTVWhBtTA7Ps3gn2rOmBUX67a3zVK8oD24YznoQrGRGQuMg+T3qgwuyu+J2BbiC/IVAv/PmCgI2Zgc7j95pGvvUO16QFuaeAFn2dkU9bzH6c7hlFir+/WkbLA7U/sd5Hw8M00s1eIq/xUs+DmJ/6NxfQe+7mDVbohjs1Gutsyx1ai2228EziCwshY100a/D29kv9A9BRftNS1kHVAAAAAElFTkSuQmCC" alt=""></a>
+                </div>
+            </div>
+
+            <div class="footer-contact">
+                <span class="material-symbols-outlined">call</span>
+                <p>0800-000-000</p>
+                <br>
+                <span class="mail material-symbols-outlined">mail</span>
+                <p>glasses@business.com</p>
+            </div>
+        </div>
+
+        <div class="footer-bottom d-flex justify-content-between">
+            <p>Copyright © 2020 Glasses.All rights reserved.</p>
+            <div class="terms">
+                <a href="#">隱私權政策</a>
+                <a href="#">服務條款</a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+</body>
+
+</html>
