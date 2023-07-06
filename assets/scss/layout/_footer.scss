@@ -1,0 +1,165 @@
+.footer {
+  padding: 48px 0 32px 0;
+  background-color: $primary;
+  color: $white;
+
+  @include xs {
+      padding: 24px 0;
+  }
+}
+
+.footer-link {
+  margin-bottom: 24px;
+
+  li {
+      margin-right: 64px;
+
+      a {
+          display: block;
+          color: $white;
+
+          &:hover {
+              opacity: 0.7;
+          }
+      }
+  }
+
+  .social-media {
+
+      a {
+          display: block;
+          max-width: 48px;
+          max-height: 48px;
+          margin-left: 32px;
+
+          &:hover {
+              opacity: 0.7;
+          }
+      }
+
+      img {
+          max-width: 100%;
+          height: auto;
+      }
+  }
+
+  @include tablet() {
+      li {
+          margin-right: 48px;
+      }
+
+      .social-media {
+          a {
+              max-width: 40px;
+              max-height: 40px;
+              margin-left: 16px;
+          }
+      }
+  }
+
+  @include sm{
+      li{
+          margin-right: 12px;
+      }
+  }
+
+  @include xs {
+      .menu {
+          display: none;
+      }
+  }
+}
+
+.footer-contact {
+  font-size: $font-size-xl;
+  margin-bottom: 32px;
+
+  span {
+      font-size: $font-size-xl;
+  }
+
+  p {
+      display: inline-block;
+      font-family: $font-noto;
+      margin-left: 22px;
+  }
+
+}
+
+.footer-top {
+  @include xs {
+      display: flex;
+      flex-direction: row-reverse;
+      align-items: flex-start;
+      justify-content: space-between;
+
+      .footer-contact {
+          margin-bottom: 24px;
+          font-size: $font-size-base;
+
+          p {
+              margin-bottom: 8px;
+              margin-left: 11px;
+          }
+
+          span {
+              font-size: 18px;
+          }
+      }
+
+      .social-media {
+          a {
+              max-width: 24px;
+              max-height: 24px;
+              margin-left: 5px;
+          }
+      }
+  }
+}
+
+.footer-bottom {
+  padding-top: 32px;
+  border-top: 1px solid $white;
+  align-items: center;
+
+  p {
+      font-family: $font-roboto;
+  }
+
+  a {
+      font-size: $font-size-s;
+      color: $white;
+      margin-left: 48px;
+
+      &:hover {
+          opacity: 0.7;
+      }
+  }
+
+  @include sm {
+      a {
+          margin-left: 8px;
+      }
+  }
+
+  @include xs {
+      padding-top: 16px;
+      flex-direction: column;
+      align-items: flex-start;
+
+      p {
+          margin-bottom: 8px;
+      }
+
+      a {
+          margin-left: 0;
+          margin-bottom: 8px;
+          font-size: $font-size-base;
+      }
+
+      .terms {
+          display: flex;
+          flex-direction: column;
+      }
+  }
+}
