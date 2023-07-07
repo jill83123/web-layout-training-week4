@@ -3,7 +3,8 @@ $white :#FFFFFF;
 $black: #000000;
 
 $primary: #AA0601;
-$primary-dark: #650300;
+//$primary-dark: #650300;
+$secondary: #650300;
 
 //font
 $font-noto: 'Noto Sans TC', sans-serif;
@@ -20,35 +21,10 @@ $font-size-h3: $font-size-base * 3; //48px
 $font-size-h2: $font-size-base * 4; //64px
 
 
-$medium: 500;
+//$medium: 500;
 
 @mixin hide-text {
     text-indent: 101%;
     overflow: hidden;
     white-space: nowrap;
-}
-
-//RWD
-@mixin lg {
-    @media (max-width: 992px){
-        @content
-    }
-}
-
-@mixin tablet {
-    @media (max-width: 768px){
-        @content
-    }
-}
-
-@mixin sm {
-    @media (max-width: 576px){
-        @content
-    }
-}
-
-@mixin xs {
-    @media (max-width: 320px),(max-width: 575px){
-        @content
-    }
 }

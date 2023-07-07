@@ -1,4 +1,4 @@
-.series-sort {
+.series-nav {
     .container {
         padding: 0;
     }
@@ -16,7 +16,7 @@
         display: block;
         font-family: $font-roboto;
         font-size: 32px;
-        font-weight: $medium;
+        font-weight: 500;
         color: $black;
         text-align: center;
         line-height: 96px;
@@ -70,7 +70,7 @@
         h2 {
             font-size: 42px;
             font-family: $font-roboto;
-            font-weight: $medium;
+            font-weight: 500;
         }
 
         h3 {
@@ -110,7 +110,7 @@
 
     span {
         color: $primary;
-        font-weight: $medium;
+        font-weight: 500;
     }
 
     .color-options {

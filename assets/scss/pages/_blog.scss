@@ -1,5 +1,5 @@
 .blog-nav {
-    background-color: $primary-dark;
+    background-color: $secondary;
 
     a {
         display: block;
@@ -9,7 +9,7 @@
         line-height: 56px;
 
         &:hover {
-            font-weight: normal;
+            opacity: .85;
         }
     }
 
@@ -65,7 +65,7 @@
     h4 {
         display: inline-block;
         margin-bottom: 16px;
-        font-weight: $medium;
+        font-weight: 500;
     }
 
     p {
@@ -116,7 +116,7 @@
         }
 
         a {
-            display: none;
+            font-size: 0px;
         }
 
         p {
@@ -197,6 +197,12 @@
     a {
         display: block;
     }
+
+    @include sm{
+        li a{
+            padding: 0 14px;
+        }
+    }
 }
 
 //page2
@@ -236,7 +242,7 @@
     
     h3 {
         font-size: $font-size-l;
-        font-weight: $medium;
+        font-weight: 500;
         margin-bottom: 16px;
     }
 
@@ -386,7 +392,6 @@
     p {
         display: inline-block;
         font-size: $font-size-base;
-        font-family: $font-noto;
         margin: 0 12px;
     }
 

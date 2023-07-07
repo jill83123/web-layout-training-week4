@@ -1,13 +1,14 @@
 @import './base/reset';
+@import './base/base';
 @import './helpers/variable';
 @import './helpers/utilities';
 
-@import './layout/header.scss';
-@import './layout/footer.scss';
+@import './layout/header';
+@import './layout/footer';
 
-@import './pages/index.scss';
+@import './pages/index';
 @import './pages/series';
-@import './pages/shop.scss';
+@import './pages/shop';
 @import './pages/shop_taipei_zhongshan';
 @import './pages/blog.scss';
-@import './pages/question.scss';
+@import './pages/question';

@@ -1,5 +1,5 @@
 .shop-detail {
-    padding: 96px 0 32px 0;
+    padding: 96px 0 80px 0;
 
     h2 {
         font-size: $font-size-h3;
@@ -59,7 +59,7 @@
 }
 
 .shop-info {
-    height: 414px;
+    align-items: stretch;
 
     @include lg {
         height: auto;
@@ -68,13 +68,11 @@
     }
 }
 
-.shop-detail-info {
+.shop-detail-card {
     width: 40%;
-    align-items: stretch;
 
     .shop-contact {
-        padding: 16px 28px;
-        margin: auto auto; 
+        padding: 26px 24px;
     }
 
     h3 {
@@ -84,7 +82,6 @@
     }
 
     p {
-        font-family: $font-noto;
         display: inline-block;
         font-size: $font-size-m;
     }
@@ -93,11 +90,6 @@
         font-size: $font-size-m;
         line-height: 1.5;
         margin-right: 12px;
-    }
-
-    .icon,
-    .text {
-        flex-direction: column;
     }
 
     a {
@@ -109,19 +101,20 @@
         background-color: $black;
     }
 
-    .card-width {
-        width: 100%;
-    }
-
     .card-body{
         border: 1px solid #00000020;
     }
 
-    img {
-        width: 100%;
+    .card-img{
         max-height: 224px;
-        object-fit: cover;
-        display: block;
+        overflow: hidden;
+
+        img {
+            display: block;
+            width: 100%;
+            min-height: 100%;
+            object-fit: cover;
+        }
     }
 
     @include lg {
@@ -129,10 +122,6 @@
         justify-content: space-between;
         width: 100%;
         margin-bottom: 24px;
-
-        .card-width{
-            width: 48%;
-        }
 
         h3{
             height: 20%;
@@ -142,14 +131,27 @@
         .contact{
             height: 80%;
         }
+
+        .card-img{
+            width: 49%;
+            max-height: 100%;
+        }
+
+        .card-body{
+            width: 49%;
+        }
     }
 
     @include sm{
-        display: block;
+        flex-direction: column;
 
-        .card-width{
+        .card-img{
             width: 100%;
-            margin-bottom: 0;
+            max-height: 224px;
+        }
+
+        .card-body{
+            width: 100%;
         }
     }
 }
@@ -159,7 +161,7 @@
 
     img {
         max-width: 100%;
-        height: 414px;
+        min-height: 100%;
         object-fit: cover;
     }
 
